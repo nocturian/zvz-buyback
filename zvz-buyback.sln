@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "zvz-buyback", "zvz-buyback\zvz-buyback.csproj", "{FD8C69FC-121E-4718-B4BF-ECB9117C5632}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD8C69FC-121E-4718-B4BF-ECB9117C5632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8C69FC-121E-4718-B4BF-ECB9117C5632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8C69FC-121E-4718-B4BF-ECB9117C5632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8C69FC-121E-4718-B4BF-ECB9117C5632}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33790A1F-145A-4933-A626-AE6557F8D79D}
+	EndGlobalSection
+EndGlobal

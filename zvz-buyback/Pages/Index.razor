@@ -1,0 +1,41 @@
+﻿@page "/"
+@inject HttpClient httpClient
+
+<h1>Hello, world!</h1>
+
+<button class="btn btn-primary" @onclick="getData">Click me</button>
+<div>@albionEven?.Victim?.Equipment?.ToString()</div>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code{
+    AlbionEvent albionEven = null;
+
+    async Task getData()
+    {
+        try
+        {
+            Console.WriteLine("Test");
+            HttpClient client = new HttpClient();
+            var query = @"https://gameinfo.albiononline.com/api/gameinfo/events/97908746";
+            string responseBody = await httpClient.GetStringAsync(query);
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine(ex.ToString());
+        }
+
+
+        //var query = @"events/97908746";
+        // var responseBody = await httpClient.GetFromJsonAsync<AlbionEvent>(query);
+
+        //Console.WriteLine(responseBody);
+
+        //albionEven = responseBody;
+        //albionEven = JsonSerializer.Deserialize<AlbionEvent>(responseBody);
+
+        //var albionEvent = JsonConvert.DeserializeObject<AlbionEvent>(responseBody);
+
+    }
+}
